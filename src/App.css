@@ -1,38 +1,161 @@
-.App {
+
+body {
+  margin:0;
+  padding:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+  text-decoration: none;
+  color:white;
+  width:100px;
+  height:30px;
+  background-color: rgb(0, 0, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 5px rgb(0, 0, 0);
+}
+.motto {
+  color:white;
+  position: fixed;
+  z-index: 3;
+  top:70%;
+  right:50px;
+  font-size: xx-large;
+}
+.basketTotal {
+  background-color: lightgray;
+  color:black;
+  height:20px;
+  width:20px;
+  border-radius: 50%;
   text-align: center;
+  margin-left:10px;
+  margin-bottom:10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover {
+  border-bottom: white solid 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  width:100%;
+  background-color: rgb(0, 0, 0);
+  height:50px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position:fixed;
+  top:100px;
+  z-index: 2;
+}
+.header {
+  width:100%;
+  height:100px;
+  color:white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 80px;
+  position: fixed;
+  z-index: 2;
+}
+.footer {
+  width:100%;
+  background-color: rgb(0, 0, 0);
+  color:white;
+  height:40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  bottom:0;
+  z-index: 2;
+}
+.checkout{
+  width:100%;
+  background-color: black;
+  color:white;
+  height:30px;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clearBasket{
+  width:30%;
+  background-color: black;
+  color:white;
+  height:30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left:70%;
+}
+.ItemCard {
+  margin:30px;
+  width:200px;
+  height:300px;
+  background-color: white;
+  color:black;
+  display:grid;
+  grid-template-rows: 1fr 30px 30px 50px;
+  text-align: center;
+  justify-content: space-evenly;
+  border:black 5px solid;
+  align-items: center;
+}
+img{
+  width:180px;
+  
+}
+.thumbnail {
+  width:80px;
+}
+.itemDisplay {
+  top:150px;
+  width:90%;
+  margin-left:5%;
+  height:auto;
+  opacity:0.8;
+  background-color:grey;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 0;
+}
+.basket {
+  top:150px;
+  width:90%;
+  margin-left:5%;
+  height:auto;
+  opacity:0.8;
+  background-color:grey;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+.basketButton {
+  color:white;
+  background-color: black;
+}
+.basketLines {
+  text-align: center;
+  display:grid;
+  grid-template-columns: 50px 300px 100px 100px;
+  width:80%;
+  justify-content:space-evenly;
+  font-size: large;
+  margin-left:10%;
+  align-items: center;
+  margin-top: 10px;
+}
+.home {
+  width:100%;
+  height:1000px;;
+  background-attachment: fixed;
+  background-image: url(./background.png);
+  background-size:cover;
 }
